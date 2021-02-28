@@ -1,0 +1,19 @@
+<div class="server" style="border:1px dotted black; margin-left: 90px;margin-top: 90px;">
+    <h3>this is the server component</h3>
+    <input type="text" class="form-control" style="width:350px; margin: 10px;" [(ngModel)]="serverName">
+    <br>
+       
+    <input type="text" class="form-control" style="width:350px; margin: 10px;" (input)="onUpdateServerName($event)">
+    {{serverName}}
+    <br>
+    <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()" style="margin-left:10px"> 
+        click
+     </button>
+     <p>{{createdServer}}</p>
+     <p [innerText]="allowNewServer"></p>
+    <div class="row" >
+      <div class="col" style="padding: 5px;border:2px solid red; margin-top: 20px;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis eveniet itaque illum harum! Quaerat, unde recusandae ipsum quod repellendus quibusdam alias omnis distinctio dolor, dicta consequatur voluptas, iusto repudiandae quam. Sed recusandae, modi hic, nulla sapiente atque, in placeat perferendis repudiandae beatae necessitatibus facere consequuntur magni vero quos error! Voluptates minima velit maiores aperiam cupiditate rerum rem quibusdam, totam in vero architecto repellat pariatur perspiciatis quae officia labore molestiae laudantium fugit expedita, voluptatem quod eaque repudiandae ipsum impedit? Ducimus eos autem necessitatibus excepturi doloremque odio, nulla, esse fugiat, natus obcaecati quo totam? Cum quos veritatis voluptas odio commodi nihil.</p>
+      </div>
+    </div>
+</div>

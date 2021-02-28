@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ngproject';
+  items;
+
+  showTabs;
+
+  ngOnInit() {
+    // this.showTabs = {
+    //   "one": true,
+    //   "two": false,
+    //   "three": true
+    // };
+  }
 }

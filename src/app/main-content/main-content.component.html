@@ -1,0 +1,31 @@
+
+<p-tabView>
+    <p-tabPanel [header]="tab.name" *ngFor="let tab of tabs; let i = index" [closable]="true">
+        message from menu : {{message}}
+        <br>
+
+        <!-- <h:form>
+    <div class="card">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <th>
+                    <tr>Name</tr>
+                </th>
+                <th>
+                    <tr>Age</tr>
+                </th>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><tr>{{tab.name}}</tr></td>
+                        <td><tr>{{tab.ID}}</tr></td>
+                    </tr>
+                    <tr>
+                        <td><tr>{{tab.name}}</tr></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+</h:form> -->
+    </p-tabPanel>
+</p-tabView>

@@ -1,0 +1,55 @@
+<div class="w3-sidebar w3-bar-block w3-blue w3-xxlarge" style="width:67px;">
+    <a href="#" class="w3-bar-item w3-button" id="admission"  style="padding: 0px;"><i class="fa fa-university" style="font-size:22px;padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px; padding-left: 22px;">Admission</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="hr" style="padding: 0px;"><i class="fa fa-users" style="font-size:22px;padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px; padding-left: 38px;">HR</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="accounts" style="padding: 0px;"><i class="fa fa-money" style="font-size:22px;padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 22px;">Accounts</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="students" style="padding: 0px;"><i class="fa fa-user" style="font-size:22px;padding-left: 22px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Students</div>
+        <div class="row" style="font-size: 12px;  padding-left: 20px;">Admission</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="reporting" style="padding: 0px;"><i class="fa fa-file" style="font-size:22px; padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Reports</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="inventory" style="padding: 0px;"><i class="fa fa-archive" style="font-size:22px; padding-left: 20px;">
+    </i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Inventory</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="library" style="padding: 0px;"><i class="fa fa-book" style="font-size:22px;padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 26px;">Library</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button"[ngbPopover]="popContent" placement="right"  id="more" style="padding: 0px;" container="body"><i class="fa fa-ellipsis-h" style="font-size:22px;padding-left: 20px;"></i></a>
+
+</div>
+
+<ng-template #popContent>
+    <a href="#" class="w3-bar-item w3-button" id="popoverlibrary" style="padding: 0px; visibility: hidden;"><i class="fa fa-book" style="font-size:22px;padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 26px; ">Library</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="popoverinventory" style="padding: 0px; visibility: hidden;"><i class="fa fa-archive" style="font-size:22px; padding-left: 20px;">
+    </i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Inventory</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="popoverreporting" style="padding: 0px; visibility: hidden;"><i class="fa fa-file" style="font-size:22px; padding-left: 20px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Reports</div>
+    </a>
+    <a href="#" class="w3-bar-item w3-button" id="popoverstudents" style="padding: 0px; visibility: hidden;"><i class="fa fa-user" style="font-size:22px;padding-left: 22px;"></i>
+        <div class="row" style="font-size: 12px;  padding-left: 24px;">Students</div>
+        <div class="row" style="font-size: 12px;  padding-left: 20px;">Admission</div>
+    </a>
+    <div class="row">
+         <div class="col">
+            <a href="#" class="w3-bar-item w3-button" id="popoveraccounts" style="padding: 0px; visibility: hidden;"><i class="fa fa-money" style="font-size:22px;padding-left: 20px;"></i>
+                <div class="row" style="font-size: 12px;  padding-left: 22px;">Accounts</div>
+            </a>
+         </div>
+    </div>
+</ng-template>
+
+
+
+
