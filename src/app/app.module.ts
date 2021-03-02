@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ServerComponent} from './server/server.component';
 import { ServersComponent} from './servers/servers.component';
@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 import {MenuItem} from 'primeng/api';                  //api
-import {TabViewModule} from 'primeng/tabview';
+import {TabViewModule, TabPanel} from 'primeng/tabview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { MainContentComponent } from './main-content/main-content.component';
@@ -27,7 +27,6 @@ import { MainContentComponent } from './main-content/main-content.component';
     SidebarComponent,
     MenuComponent,
     MainContentComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -36,6 +35,7 @@ import { MainContentComponent } from './main-content/main-content.component';
     NgbModule,
     BrowserAnimationsModule,
     TabViewModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

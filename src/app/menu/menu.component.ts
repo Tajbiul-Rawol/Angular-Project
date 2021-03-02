@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TabService } from '../sharedservices/tab.service';
 @Component({
   selector: 'app-menu',
@@ -7,19 +8,20 @@ import { TabService } from '../sharedservices/tab.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private tabservice:TabService) { }
-
-  openTab(){
-    this.tabservice.tabName('admissionTab');
-  }
+  //this is where all the menus will go
+  menuOptions = [];
+  constructor(private tabService:TabService, private router:Router) { }
 
 
-
-  tabmessage = "hello this is a tab";
-
-  ngOnInit(): void {
-     //this.tabservice.setMessage(this.tabmessage);
+  openTab(url: string) {
+    this.tabService.addTab(url);
+    this.router.navigateByUrl(url);
     
+  }
+  ngOnInit(): void {
+    
+    //add the tabOptions array into the menu array to load the menu 
+    this.menuOptions = this.tabService.tabOptions;
   }
 
 
